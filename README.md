@@ -10,10 +10,12 @@ You'll need to Install Terraform:
 
 Here is an example for macOS:
 
+```
 curl -LO https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_darwin_amd64.zip 
 unzip terraform_0.12.18_darwin_amd64.zip 
 chmod +x terraform 
 sudo mv terraform /usr/local/bin/ 
+```
 
 ## Download this project
 To download this project and get in the directory, run the following commands:
@@ -56,10 +58,12 @@ quantity
 To change the quantity of servers provisioned, modify this number. Default is set at 2. 
 
 # To Access:
+
 On Linux/Mac
 To SSH into these servers: Open a terminal and type `ssh root@(YOUR PUBLIC IPv4 ADDRESS)`
+
 On Windows:
-- Download an SSH client, such as PuTTY.
+- Download an SSH client, in this example we'll use PuTTY.
 - Run the PuTTY.exe binary downloaded earlier go to `Data` under `Connection`, and add `root` in the field of the username.
 - Go to `Authentication`, under `SSH`, and click the `Browse` button, then navigate to where you put your private SSH key that you created earlier.
 - Now go back to `Session`, enter the public IP address of your server, give a name to the session, and click `Open`.
