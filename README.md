@@ -18,8 +18,9 @@ sudo mv terraform /usr/local/bin/
 ## Download this project
 To download this project and get in the directory, run the following commands:
 
-git clone https://github.com/chasclane/Terraform-Provisioning-On-Metal/
-cd Terraform-Provisioning-On-Metal
+`git clone https://github.com/chasclane/Terraform-Provisioning-On-Metal/`
+
+`cd Terraform-Provisioning-On-Metal`
 
 ## Initialize Terraform:
 Terraform uses modules to deploy infrastructure. In order to initialize the modules your simply run: `terraform init`. This should download the necessary modules into a hidden directory .terraform 
