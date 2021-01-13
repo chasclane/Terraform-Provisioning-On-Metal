@@ -1,6 +1,7 @@
 variable "api_key" {}
 variable "project_id" {}
 variable "name" {}
+variable "quantity" {}
 
 provider "packet" {
   auth_token          =   var.api_key
@@ -24,7 +25,7 @@ resource "packet_ssh_key" "my_tf_ssh_key" {
 #Provision one or more servers in the given datacenter (facility), with the given OS, to the provided project.
 resource "packet_device" "my_tf_server" {
   depends_on          =   [packet_ssh_key.my_tf_ssh_key]
-  count               =   2 
+  count               =   var.quantity 
   hostname            =   format("%s-%02d", var.name, count.index + 1)
   plan                =   "c3.medium.x86"
   facilities          =   ["sv15"]

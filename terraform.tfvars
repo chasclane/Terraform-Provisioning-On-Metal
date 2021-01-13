@@ -4,3 +4,5 @@ api_key="CHANGE-THIS"
 project_id="CHANGE-THIS"
 #Hostname prefix for your instance(s). Example: test-server
 name="CHANGE-THIS"
+#Quantity of servers to be provisioned:
+quantity="2"
