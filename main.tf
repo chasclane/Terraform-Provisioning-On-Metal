@@ -26,8 +26,8 @@ resource "packet_device" "my_tf_server" {
   depends_on          =   [packet_ssh_key.my_tf_ssh_key]
   count               =   2 
   hostname            =   format("%s-%02d", var.name, count.index + 1)
-  plan                =   "c2.medium.x86"
-  facilities          =   ["ewr1"]
+  plan                =   "c3.medium.x86"
+  facilities          =   ["sv15"]
   operating_system    =   "centos_7"
   billing_cycle       =   "hourly"
   project_id          =   var.project_id
